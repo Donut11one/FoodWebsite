@@ -5,6 +5,8 @@
         <style>
             body{
                 /* background-image: url(Images/download.jpg); */
+                background-color: black;
+
             }
             .Titleimage {
                 border-radius: 10px;
@@ -28,7 +30,7 @@
                 font-weight: bold;
 
             }
-            .shrimpdimg{
+            .foodImg{
                 width: 50%;
                 border-radius: 10%;
                 display: block;
@@ -46,29 +48,96 @@
                 margin-right: auto;
                 background-color: rgba(255, 255, 255, 0.5);
             }
-
-
+            .tabs{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1600px;
+                margin: 50px auto;
+                padding: 25px;
+            }
+            .tabs input[type="radio"]{
+                display: none;
+            }
+            .tabs label{
+                padding: 20px;
+                background-color: rgb(166, 166, 166);
+                font-weight: bolder;
+            }
+            .tabs .tab{
+                width: 100%;
+                padding: 20px;
+                background-color: white;
+                order: 1;
+                display:none
+            } 
+            .tabs input[type="radio"]:checked +label + .tab {
+                display:block
+                
+            }
+            .tabs input[type = "radio"]:checked + label{
+                background-color: white;
+            }
         </style>
     </head>
     <body>
         <div class = "Middle">
-            <p class = "Title"> What to order at Dimsum</p>     
+            <p class = "Title"> What to order at Cantonese Resturants</p>     
             <img src="Images/download.jpg" class = "Titleimage">
-            <br><br><br><br><br><br><br><br>            
-            <p class = "BreakfastDimsum"> Breakfast Dimsum</p>
-            <br><br><br>
-            <p class ="FoodTitle">Ha Gao</p>
-    
-            <img src="Images/shrimpdumplings.jpg" class = shrimpdimg>
-            <p class = "Details"> The first one of the list you should order is the "Ha Gao" (虾饺) which directly translates to shrimp dumplings. Its made by combining shrimp and ground pork put into a rice wrapper, then it is wrapped into a dumpling like shape then steamed. This is one of the must haves at any Dimsum resturant.</p>
-         
-            <p class = "FoodTitle">Shiu mai</p>
-            <p class = "Details">Shiu mai is similar to a dumpling but it is mainly ground pork with mushrooms wrapped with wonton wrappers and an open top, it is then topped with crab roe. This is then steamed and served  </p>
+            <p class = "Details"> There are plenty of cantonese dishes, ranging from steamed food to stir fry. This is an introduction to the most common food items in cantonese resturants.</p>
+            <p class = "Details"> Starting with breakfast most of the items are either steamed or deep fried. They all come in groups single items which is perfect to share with others. </p>
+            <p class = "Details"> For lunch most resturants like to serve individual meals, mostly one dish with rice. Less for sharing and more for one person.</p>
+            <p class = "Details"> Dinner service are the dishes where are ment for sharing and all come in very large quantities. These are perfect for any special occasion.</p>
+            <br><br> 
+            <div class = "tabs">
+                <input type="radio" id="Breakfast" name="tabs" checked="checked">
+                <label for="Breakfast">Breakfast</label>
+                <div class="tab">
+                    <p class = "BreakfastDimsum">Breakfast</p>
+                    <br><br><br>
+                    <p class ="FoodTitle">Ha Gao</p>
         
-            <p class = "FoodTitle"> Spring rolls</p>
-            <p class = Details> Spring rolls are the classic usually with shrimp with ground pork inside then is wrapped with rice wrappers then it is deep fried untill golden brown and served </p>
-        
+                    <img src="Images/shrimpdumplings.jpg" class = "foodImg">
+                    <p class = "Details">Main ingredients include: <br>Shrimp <br>Ground Pork </p>
+                    <p class = "Details">  Its made by combining shrimp and ground pork wrapped with a rice wrapper, then it is wrapped into a dumpling like shape then steamed. This is one of the must haves at any Dimsum resturant.</p>
+
+                    <p class = "FoodTitle">Shiu mai</p>
+                    <img src="Images/shumai.jpg" class = "foodImg">
+                    <p class = "Details"> Main ingredients include: <br>Ground Pork <br>Mushrooms <br>Crab Roe</p>
+                    <p class = "Details">Shiu mai is similar to a dumpling but it is mainly ground pork with mushrooms wrapped with wonton wrappers and an open top, it is then topped with crab roe. This is then steamed and served.</p>
+            
+                    <p class = "FoodTitle"> Spring rolls</p>
+                    <img src="Images/Spring-Rolls.jpg" class = "foodImg">
+                    <p class = "Details">Main ingredients include: <br>Shrimp <br> Ground Pork </p>
+                    <p class = "Details"> Spring rolls are the classic usually with shrimp with ground pork inside then is wrapped with spring roll wrappers then it is deep fried untill golden brown and served. </p>
+                    
+                    <p class = "FoodTitle">BBQ pork buns</p>
+                    <img src="Images/Char_siu_bao.jpg" class = "foodImg">
+                    <p class = "Details">Main ingredients include: <br> Pork butt <br> Rice Flour Buns </p> 
+                    <p class = "Details">Barbeque Pork with a sweet sauce stuffed into rice flour bun. Then the bun is steamed where the buns become fluffy and then served.</p> 
+
+                    <p class = "FoodTitle"> </p>
+                </div>
+                <input type="radio" id = "Lunch" name="tabs">
+                <label for="Lunch"> Lunch</label>
+                <div class = "tab">
+                    <p class = "BreakfastDimsum">Lunch</p>
+                    <br><br><br>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quae cum suscipit recusandae porro dolore ipsum libero, eius aspernatur itaque facere reiciendis aperiam tenetur. Earum aut accusantium nobis repudiandae asperiores.</p>
+                </div>
+                
+                <input type="radio" id = "Dinner" name="tabs">
+                <label for="Dinner"> Dinner</label>
+                <div class = "tab">
+                    <p class = "BreakfastDimsum">Dinner</p>
+                    <br><br><br>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, eaque! Corporis aut ab impedit provident. Blanditiis nostrum omnis iusto. Distinctio nostrum tempora tenetur quia impedit non deleniti pariatur earum laborum.</p>
+                </div>
+            </div>
+
         </div>
+
     </body>
 </html>
  
