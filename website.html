@@ -38,7 +38,7 @@
                 display: block;
                 margin-right: auto;
                 margin-left: auto;   
-                display: inline-block;
+
             }
             .Details{
                 font-size: larger;
@@ -48,10 +48,10 @@
                 font-size: 40px
             }
             .Individual_Dish{
-                width: 270px;
-                display: inline-block;
-                min-height: 3
-                00px;
+                width: 300px;
+                min-height: 300px;
+                vertical-align: top;
+                background-color: azure;
             }
 
             .Middle{
@@ -62,28 +62,17 @@
                 background-color: rgba(255, 255, 255, 0.5);
             }
             .tabs{
-                display: flex;
-                flex-wrap: wrap;
                 max-width: 1600px;
                 margin: 50px auto;
                 padding: 25px;
             }
-            .tabs input[type="radio"]{
-                display: none;
-            }
-            .tabs label{
-                padding: 20px;
-                background-color: rgb(166, 166, 166);
-                font-weight: bolder;
-            }
-            .tabs .tab{
-                width: 100%;
-                padding: 20px;
-                background-color: white;
-                order: 0;
-            } 
-            .tabs input[type = "radio"]:checked + label{
-                background-color: white;
+            .tab{
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 44%;
+
+                overflow-x: auto;
+                overscroll-behavior-inline: contain; /* mainly for mobile websites to prevnet further scrolling If you're scrolling within the element it dosent scroll the entire page when you reach the end*/
             }
         </style>
     </head>
@@ -97,31 +86,29 @@
             <p class = "Details"> For lunch most resturants like to serve individual meals, mostly one dish with rice. Less for sharing and more for one person.</p>
             <p class = "Details"> Dinner service are the dishes where are ment for sharing and all come in very large quantities. These are perfect for any special occasion.</p>
             <br><br> 
+
+
             <div class = "tabs">
-                <input type="radio" id="Breakfast" name="tabs" checked = "checked">
-                <label for="Breakfast">Breakfast</label>
+
+                <p class = "BreakfastDimsum">Breakfast</p>                
                 <div class="tab">
-                    <p class = "BreakfastDimsum">Breakfast</p>
-                    <br><br><br>
                     <div  class = "Individual_Dish">
-                    <p class ="FoodTitle">Ha Gao</p>
-                    <img src="Images/shrimpdumplings.jpg" class = "foodImg">
-                    <p class = "Details">Main ingredients include: <br>Shrimp <br>Ground Pork </p>
-                    <p class = "Details">  Its made by combining shrimp and ground pork wrapped with a rice wrapper, then it is wrapped into a dumpling like shape then steamed. This is one of the must haves at any Dimsum resturant.</p>
+                        <p class ="FoodTitle">Ha Gao</p>
+                        <img src="Images/shrimpdumplings.jpg" class = "foodImg">
+                        <p class = "Details">Main ingredients include: <br>Shrimp <br>Ground Pork </p>
+                        <p class = "Details">  Its made by combining shrimp and ground pork wrapped with a rice wrapper, then it is wrapped into a dumpling like shape then steamed. This is one of the must haves at any Dimsum resturant.</p>
                     </div>
                     <div class = "Individual_Dish">
                         <p class = "FoodTitle">Shiu mai</p>
                         <img src="Images/shumai.jpg" class = "foodImg">
                         <p class = "Details"> Main ingredients include: <br>Ground Pork <br>Mushrooms <br>Crab Roe</p>
                         <p class = "Details">Shiu mai is similar to a dumpling but it is mainly ground pork with mushrooms wrapped with wonton wrappers and an open top, it is then topped with crab roe. This is then steamed and served.</p>
-                        
                     </div>
                     <div class = "Individual_Dish">
                         <p class = "FoodTitle"> Spring rolls</p>
                         <img src="Images/Spring-Rolls.jpg" class = "foodImg">
                         <p class = "Details">Main ingredients include: <br>Shrimp <br> Ground Pork </p>
-                        <p class = "Details"> Spring rolls are the classic usually with shrimp with ground pork inside then is wrapped with spring roll wrappers then it is deep fried untill golden brown and served. </p>
-                        
+                        <p class = "Details"> Spring rolls are the classic usually with shrimp with ground pork inside then is wrapped with spring roll wrappers then it is deep fried untill golden brown and served. </p>                        
                     </div>
                     <div class = "Individual_Dish">
                         <p class = "FoodTitle">BBQ pork buns</p>
@@ -129,14 +116,11 @@
                         <p class = "Details">Main ingredients include: <br> Pork butt <br> Rice Flour Buns </p> 
                         <p class = "Details">Barbeque Pork with a sweet sauce stuffed into rice flour bun. Then the bun is steamed where the buns become fluffy and then served.</p> 
                     </div>
-                    
-                    <p class = "FoodTitle"> </p>
                 </div>
-                <input type="radio" id = "Lunch" name="tabs">
-                <label for="Lunch"> Lunch</label>
+
+                <p class = "BreakfastDimsum">Lunch</p>
+
                 <div class = "tab">
-                    <p class = "BreakfastDimsum">Lunch</p>
-                    <br><br><br>
                     
                     <div class = "Individual_Dish">
                         <p class = "FoodTitle">Hainan Chicken</p>
@@ -160,53 +144,46 @@
                     </div>
                     
                     <div class = "Individual_Dish">
-                    <p class= "FoodTitle"> Century Egg Congee</p>
-                    <img src="Images/Congee.jpg" class = "foodImg"> 
-                    <p class = "Details"> Main Ingredients include: <br> Century egg <br> Lean Pork <br> Rice</p>
-                    <p class = "Details"> Congee is rice cooked with a lot more water to give it a thicker consistancy. This is cooked with century egg and lean pork. It is served by itself.</p>
+                        <p class= "FoodTitle"> Century Egg Congee</p>
+                        <img src="Images/Congee.jpg" class = "foodImg"> 
+                        <p class = "Details"> Main Ingredients include: <br> Century egg <br> Lean Pork <br> Rice</p>
+                        <p class = "Details"> Congee is rice cooked with a lot more water to give it a thicker consistancy. This is cooked with century egg and lean pork. It is served by itself.</p>
+                    </div>
                 </div>
-            </div>
             
-            <input type="radio" id = "Dinner" name="tabs">
-            <label for="Dinner"> Dinner</label>
-            <div class = "tab">
                 <p class = "BreakfastDimsum">Dinner</p>
-                <br><br><br>
-                <div class = "Individual_Dish">
-                <div class = "Individual_Dish">
-                    <p class= "FoodTitle"> Lobster Sticky Rice</p>
-                    <img src="Images/LobsterStickyRice.jpg" class = "foodImg"> 
-                    <p class = "Details">Main ingredients include: <br>Lobseter <br>Sticky Rice</p>
-                    <p class = "Details">This is cooked together to give the rice the lobster flavor and is served with lobster meat</p>
-                </div>
-                </div>
-                
-                <div class = "Individual_Dish">
-                    <p class= "FoodTitle"> Steamed Fish</p>
-                    <img src="Images/SteamFish.jpg" class = "foodImg"> 
-                    <p class = "Details">Main ingredients include: <br>Fish of choice</p>
-                    <p class = "Details">Steamed fish with soysauce</p>
-                </div>
-                
-                <div class = "Individual_Dish">
-                    <p class= "FoodTitle"> Soy Sauce Chicken</p>
-                    <img src="Images/Soy_Sauce_Chicken.jpg" class = "foodImg"> 
-                    <p class = "Details">Main ingredients include: <br> Chicken <br> Soy Sauce</p>
-                    <p class = "Details">Chicken is slow cooked in soysauce. Chicken needs to be based and at low heat for 2 hours. </p>
-                </div>
-                
-                <div class = "Individual_Dish">
-                    <p class= "FoodTitle">Eggplant in Spicy Garlic Sauce Hot Pot</p>
-                    <img src="Images/Spicy-Garlic-Eggplant-1-scaled.jpg" class = "foodImg"> 
-                    <p class = "Details">Main ingredients include: <br> Eggplant <br> Mushroos<br> Julian Pork <br> Spicy Bean Paste <br> Red Vinegar</p>
-                    <p class = "Details">Slow cooked all the ingredients in a pot with water the results are not exactly like hot pot the sauce is thicker and you only eat the contents and there is no soup</p>
-                </div>
+
+                <div class = "tab">
+                    <div class = "Individual_Dish">
+                        <p class= "FoodTitle"> Lobster Sticky Rice</p>
+                        <img src="Images/LobsterStickyRice.jpg" class = "foodImg"> 
+                        <p class = "Details">Main ingredients include: <br>Lobseter <br>Sticky Rice</p>
+                        <p class = "Details">This is cooked together to give the rice the lobster flavor and is served with lobster meat</p>
+                    </div>
+                    
+                    <div class = "Individual_Dish">
+                        <p class= "FoodTitle"> Steamed Fish</p>
+                        <img src="Images/SteamFish.jpg" class = "foodImg"> 
+                        <p class = "Details">Main ingredients include: <br>Fish of choice</p>
+                        <p class = "Details">Steamed fish with soysauce</p>
+                    </div>
+                    
+                    <div class = "Individual_Dish">
+                        <p class= "FoodTitle"> Soy Sauce Chicken</p>
+                        <img src="Images/Soy_Sauce_Chicken.jpg" class = "foodImg"> 
+                        <p class = "Details">Main ingredients include: <br> Chicken <br> Soy Sauce</p>
+                        <p class = "Details">Chicken is slow cooked in soysauce. Chicken needs to be based and at low heat for 2 hours. </p>
+                    </div>
+                    
+                    <div class = "Individual_Dish">
+                        <p class= "FoodTitle">Eggplant in Spicy Garlic Sauce Hot Pot</p>
+                        <img src="Images/Spicy-Garlic-Eggplant-1-scaled.jpg" class = "foodImg"> 
+                        <p class = "Details">Main ingredients include: <br> Eggplant <br> Mushroos<br> Julian Pork <br> Spicy Bean Paste <br> Red Vinegar</p>
+                        <p class = "Details">Slow cooked all the ingredients in a pot with water the results are not exactly like hot pot the sauce is thicker and you only eat the contents and there is no soup</p>
+                    </div>
                 </div>
             </div>
-             
-
         </div>
-
     </body>
 </html>
  
