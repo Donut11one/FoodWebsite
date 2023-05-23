@@ -5,10 +5,12 @@
         <style>
             body{
                 /* background-image: url(Images/download.jpg); */
-                background-color: black;
+                background-color:aliceblue;
 
             }
             .Titleimage {
+                width: 1200px;
+                height: 600px;
                 border-radius: 10px;
                 display: block;
                 margin-right: auto;
@@ -26,23 +28,34 @@
             }
             .FoodTitle{
                 font-size: xx-large;
-                text-align: center;
                 font-weight: bold;
+
 
             }
             .foodImg{
-                width: 50%;
+                width: 100%;
                 border-radius: 10%;
                 display: block;
                 margin-right: auto;
                 margin-left: auto;   
+                display: inline-block;
             }
             .Details{
                 font-size: larger;
             }
 
+            .Logo{
+                font-size: 40px
+            }
+            .Individual_Dish{
+                width: 270px;
+                display: inline-block;
+                min-height: 3
+                00px;
+            }
+
             .Middle{
-                width: 60%;
+                width: 80%;
                 padding: 20px;
                 margin-left: auto;
                 margin-right: auto;
@@ -67,19 +80,15 @@
                 width: 100%;
                 padding: 20px;
                 background-color: white;
-                order: 1;
-                display:none
+                order: 0;
             } 
-            .tabs input[type="radio"]:checked +label + .tab {
-                display:block
-                
-            }
             .tabs input[type = "radio"]:checked + label{
                 background-color: white;
             }
         </style>
     </head>
     <body>
+        <p class="Logo">Order</p>
         <div class = "Middle">
             <p class = "Title"> What to order at Cantonese Resturants</p>     
             <img src="Images/download.jpg" class = "Titleimage">
@@ -89,32 +98,38 @@
             <p class = "Details"> Dinner service are the dishes where are ment for sharing and all come in very large quantities. These are perfect for any special occasion.</p>
             <br><br> 
             <div class = "tabs">
-                <input type="radio" id="Breakfast" name="tabs" checked="checked">
+                <input type="radio" id="Breakfast" name="tabs" checked = "checked">
                 <label for="Breakfast">Breakfast</label>
                 <div class="tab">
                     <p class = "BreakfastDimsum">Breakfast</p>
                     <br><br><br>
+                    <div  class = "Individual_Dish">
                     <p class ="FoodTitle">Ha Gao</p>
-        
                     <img src="Images/shrimpdumplings.jpg" class = "foodImg">
                     <p class = "Details">Main ingredients include: <br>Shrimp <br>Ground Pork </p>
                     <p class = "Details">  Its made by combining shrimp and ground pork wrapped with a rice wrapper, then it is wrapped into a dumpling like shape then steamed. This is one of the must haves at any Dimsum resturant.</p>
-
-                    <p class = "FoodTitle">Shiu mai</p>
-                    <img src="Images/shumai.jpg" class = "foodImg">
-                    <p class = "Details"> Main ingredients include: <br>Ground Pork <br>Mushrooms <br>Crab Roe</p>
-                    <p class = "Details">Shiu mai is similar to a dumpling but it is mainly ground pork with mushrooms wrapped with wonton wrappers and an open top, it is then topped with crab roe. This is then steamed and served.</p>
-            
-                    <p class = "FoodTitle"> Spring rolls</p>
-                    <img src="Images/Spring-Rolls.jpg" class = "foodImg">
-                    <p class = "Details">Main ingredients include: <br>Shrimp <br> Ground Pork </p>
-                    <p class = "Details"> Spring rolls are the classic usually with shrimp with ground pork inside then is wrapped with spring roll wrappers then it is deep fried untill golden brown and served. </p>
+                    </div>
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle">Shiu mai</p>
+                        <img src="Images/shumai.jpg" class = "foodImg">
+                        <p class = "Details"> Main ingredients include: <br>Ground Pork <br>Mushrooms <br>Crab Roe</p>
+                        <p class = "Details">Shiu mai is similar to a dumpling but it is mainly ground pork with mushrooms wrapped with wonton wrappers and an open top, it is then topped with crab roe. This is then steamed and served.</p>
+                        
+                    </div>
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle"> Spring rolls</p>
+                        <img src="Images/Spring-Rolls.jpg" class = "foodImg">
+                        <p class = "Details">Main ingredients include: <br>Shrimp <br> Ground Pork </p>
+                        <p class = "Details"> Spring rolls are the classic usually with shrimp with ground pork inside then is wrapped with spring roll wrappers then it is deep fried untill golden brown and served. </p>
+                        
+                    </div>
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle">BBQ pork buns</p>
+                        <img src="Images/Char_siu_bao.jpg" class = "foodImg">
+                        <p class = "Details">Main ingredients include: <br> Pork butt <br> Rice Flour Buns </p> 
+                        <p class = "Details">Barbeque Pork with a sweet sauce stuffed into rice flour bun. Then the bun is steamed where the buns become fluffy and then served.</p> 
+                    </div>
                     
-                    <p class = "FoodTitle">BBQ pork buns</p>
-                    <img src="Images/Char_siu_bao.jpg" class = "foodImg">
-                    <p class = "Details">Main ingredients include: <br> Pork butt <br> Rice Flour Buns </p> 
-                    <p class = "Details">Barbeque Pork with a sweet sauce stuffed into rice flour bun. Then the bun is steamed where the buns become fluffy and then served.</p> 
-
                     <p class = "FoodTitle"> </p>
                 </div>
                 <input type="radio" id = "Lunch" name="tabs">
@@ -122,19 +137,73 @@
                 <div class = "tab">
                     <p class = "BreakfastDimsum">Lunch</p>
                     <br><br><br>
-
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quae cum suscipit recusandae porro dolore ipsum libero, eius aspernatur itaque facere reiciendis aperiam tenetur. Earum aut accusantium nobis repudiandae asperiores.</p>
-                </div>
-                
-                <input type="radio" id = "Dinner" name="tabs">
-                <label for="Dinner"> Dinner</label>
-                <div class = "tab">
-                    <p class = "BreakfastDimsum">Dinner</p>
-                    <br><br><br>
-
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, eaque! Corporis aut ab impedit provident. Blanditiis nostrum omnis iusto. Distinctio nostrum tempora tenetur quia impedit non deleniti pariatur earum laborum.</p>
+                    
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle">Hainan Chicken</p>
+                        <img src="Images/Hainanchicken.jpg" class = "foodImg"> 
+                        <p class = "Details"> Main ingredients include: <br> Chicken</p>
+                        <p class = "Details"> Slowed cooked whole chicken,  it simmers in salted warm water for around 2 hours it is then served with rice</p>
+                        
+                    </div>
+                    <div class = "Individual_Dish">
+                        <p class= "FoodTitle"> Curry Beef Briskets</p>
+                        <img src="Images/Curry-Beef-Brisket-insta.jpg" class = "foodImg"> 
+                        <p class = "Details">Main ingredients include: <br>Beef Briskets<br>Potatoes</p>
+                        <p class = "Details"> Cantonese style curry cooked with beef briskets and potatoes generally less spicy and more coconut milk in the curry. This is served with rice</p>
+                    </div>
+                    
+                    <div class = "Individual_Dish">
+                        <p class= "FoodTitle"> Stir Fried Beef Rice Noodle</p>
+                        <img src="Images/Gon_caau_ngau_hoJPG.JPG" class = "foodImg"> 
+                        <p class = "Details">Main ingredients include: <br> Sliced Beef <br> Rice noodles <br> leeks <br> bean sprouts</p>
+                        <p class = "Details"> Stirfry of rice noodles, sliced beef, leeks and bean sprouts with soysauce, and is then served usually with garlic hotsauce.</p>
+                    </div>
+                    
+                    <div class = "Individual_Dish">
+                    <p class= "FoodTitle"> Century Egg Congee</p>
+                    <img src="Images/Congee.jpg" class = "foodImg"> 
+                    <p class = "Details"> Main Ingredients include: <br> Century egg <br> Lean Pork <br> Rice</p>
+                    <p class = "Details"> Congee is rice cooked with a lot more water to give it a thicker consistancy. This is cooked with century egg and lean pork. It is served by itself.</p>
                 </div>
             </div>
+            
+            <input type="radio" id = "Dinner" name="tabs">
+            <label for="Dinner"> Dinner</label>
+            <div class = "tab">
+                <p class = "BreakfastDimsum">Dinner</p>
+                <br><br><br>
+                <div class = "Individual_Dish">
+                <div class = "Individual_Dish">
+                    <p class= "FoodTitle"> Lobster Sticky Rice</p>
+                    <img src="Images/LobsterStickyRice.jpg" class = "foodImg"> 
+                    <p class = "Details">Main ingredients include: <br>Lobseter <br>Sticky Rice</p>
+                    <p class = "Details">This is cooked together to give the rice the lobster flavor and is served with lobster meat</p>
+                </div>
+                </div>
+                
+                <div class = "Individual_Dish">
+                    <p class= "FoodTitle"> Steamed Fish</p>
+                    <img src="Images/SteamFish.jpg" class = "foodImg"> 
+                    <p class = "Details">Main ingredients include: <br>Fish of choice</p>
+                    <p class = "Details">Steamed fish with soysauce</p>
+                </div>
+                
+                <div class = "Individual_Dish">
+                    <p class= "FoodTitle"> Soy Sauce Chicken</p>
+                    <img src="Images/Soy_Sauce_Chicken.jpg" class = "foodImg"> 
+                    <p class = "Details">Main ingredients include: <br> Chicken <br> Soy Sauce</p>
+                    <p class = "Details">Chicken is slow cooked in soysauce. Chicken needs to be based and at low heat for 2 hours. </p>
+                </div>
+                
+                <div class = "Individual_Dish">
+                    <p class= "FoodTitle">Eggplant in Spicy Garlic Sauce Hot Pot</p>
+                    <img src="Images/Spicy-Garlic-Eggplant-1-scaled.jpg" class = "foodImg"> 
+                    <p class = "Details">Main ingredients include: <br> Eggplant <br> Mushroos<br> Julian Pork <br> Spicy Bean Paste <br> Red Vinegar</p>
+                    <p class = "Details">Slow cooked all the ingredients in a pot with water the results are not exactly like hot pot the sauce is thicker and you only eat the contents and there is no soup</p>
+                </div>
+                </div>
+            </div>
+             
 
         </div>
 
