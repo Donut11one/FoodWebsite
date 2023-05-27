@@ -1,0 +1,75 @@
+
+    body{
+        /* background-image: url(Images/download.jpg); */
+        background-color:aliceblue;
+
+    }
+    .Logoimg{
+        width: 40px;
+    }
+    .Titleimage {
+        width: 1200px;
+        height: 600px;
+        border-radius: 10px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Title{
+        font-weight: bolder;
+        text-align: center;
+        font-size: 80px;
+    }    
+    .BreakfastDimsum{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .FoodTitle{
+        font-size: 40px;
+        font-weight: bold;
+
+
+    }
+    .foodImg{
+        width: 100%;
+        border-radius: 10%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;   
+
+    }
+    .Details{
+        font-size: 30px;
+    }
+
+    .Logo{
+        font-size: 40px
+    }
+    .Individual_Dish{
+        width: 300px;
+        min-height: 300px;
+        vertical-align: top;
+        background-color: azure;
+    }
+
+    .Middle{
+        width: 80%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .tabs{
+        max-width: 1600px;
+        margin: 50px auto;
+        padding: 25px;
+    }
+    .tab{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 44%;
+
+        overflow-x: auto;
+        overscroll-behavior-inline: contain; /* mainly for mobile websites to prevnet further scrolling If you're scrolling within the element it dosent scroll the entire page when you reach the end*/
+    }

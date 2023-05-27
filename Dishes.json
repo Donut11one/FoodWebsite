@@ -1,0 +1,63 @@
+[
+    {
+        "Dishname" : "Ha gao",
+        "Type" : "breakfast",
+        "Imgsrc": "Images/shrimpdumplings.jpg"
+    },
+    {
+        "Dishname" : "Shiu mai",
+        "Type" : "breakfast",
+        "Imgsrc":  "Images/shumai.jpg"
+    },
+    {
+        "Dishname" : "Spring rolls",
+        "Type" : "breakfast",
+        "Imgsrc": "Images/Spring-Rolls.jpg"
+    },
+    {
+        "Dishname" : "Bbq pork buns",
+        "Type" : "breakfast",
+        "Imgsrc": "Images/Char_siu_bao.jpg"
+    },
+    {
+        "Dishname" : "Hainan Chicken",
+        "Type" : "Lunch",
+        "Imgsrc": "Images/Hainanchicken.jpg"
+    },
+    {
+        "Dishname" : "Curry Beef Briskets",
+        "Type" : "Lunch",
+        "Imgsrc": "Images/Curry-Beef-Brisket-insta.jpg"
+    },
+    {
+        "Dishname" : "Stir Fried Beef Noodles",
+        "Type" : "Lunch",
+        "Imgsrc": "Images/Gon_caau_ngau_hoJPG.JPG"
+    },
+    {
+        "Dishname" : "Century Egg Congee",
+        "Type" : "Lunch",
+        "Imgsrc": "Images/Congee.jpg"
+    },
+    {
+        "Dishname" : "Lobster Sticky Rice",
+        "Type" : "Dinner",
+        "Imgsrc": "Images/LobsterStickyRice.jpg"
+    },
+    {
+        "Dishname" : "Steamed Fish",
+        "Type" : "Dinner",
+        "Imgsrc":"Images/SteamFish.jpg"
+    },
+    {
+        "Dishname" : "Soy Sauce Chicken",
+        "Type" : "Dinner",
+        "Imgsrc":"Images/Soy_Sauce_Chicken.jpg"
+    },
+    {
+        "Dishname" : "Eggplant in Spicy Garlic Sauce Hot Pot",
+        "Type" : "Dinner",
+        "Imgsrc":"Images/Spicy-Garlic-Eggplant-1-scaled.jpg"
+    }
+
+]
