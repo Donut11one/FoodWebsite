@@ -1,0 +1,33 @@
+[
+    {
+        "Dishname" : "Western Lake",
+        "Type" : "breakfast",
+        "Link": "http://westernlake.ca/english/"
+    },
+
+    {
+        "Dishname" : "Sun Sui Wah",
+        "Type" : "breakfast",
+        "Link" : "http://www.sunsuiwah.ca/index.php?page=home&location=richmond"
+    },
+
+    {
+        "Dishname" : "Happy Day Cafe",
+        "Type" : "Lunch",
+        "Link" : "https://happydaycafe.ca"
+    },
+    {
+        "Dishname" : "Double Double",
+        "Type" : "Lunch",
+        "Link": "https://goo.gl/maps/e9CxoLKMcfEbmsxL9"
+    },
+
+    {
+        "Dishname" : "Ho Yuen Kee Restaurant",
+        "Type" : "Dinner"
+    },
+    {
+        "Dishname" : "",
+        "Type" : "Dinner"
+    }
+]

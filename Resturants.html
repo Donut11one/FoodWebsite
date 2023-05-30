@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Resturants</title>
+    </head>
+    <body>
+
+
+
+
+
+
+        <link rel="stylesheet" href="style.css">
+        
+        <a href=""><div><p class="Logo"><img src="Images/Logo.jpg" class="Logoimg">Order</p></div></a>
+        <div class = "Middle">
+            <p class = "Title"> Resturants In Vancouver</p>
+
+
+            <div class = "tabs">
+
+
+                <p class = "BreakfastDimsum">Breakfast</p>                
+                <div class="tab">
+                    <div  class = "Individual_Dish" id = "Dishes">
+                        <p class ="FoodTitle" id="Title0"></p>
+
+                        <p class= Details> This resturant is at Victoria drive and E33rd Ave in . Always very busy reccomend reserving a table. Very good pricing and large portions</p>
+                        <a href="" id = "Link0"></a>
+                        <!-- <iframe src="https://goo.gl/maps/tZ7VfhoQ3PCs6DvA7" frameborder="0" width = 300 height = 300></iframe> -->
+                        
+                    </div>
+                    
+                    <div class = "Individual_Dish" id = "Dishes">
+                        
+                        <p class ="FoodTitle" id="Title1"></p>
+
+                        <p class = "Details"> A Larger resturan than Western Lake so theres a lot more room for customers, This resturan is on Main st and 23rd ave. Reservation for a table is reccomended. </p>
+                        <a href="" id = "Link1"></a>
+                        
+                    </div>
+                </div>
+                
+                
+                <p class = "BreakfastDimsum"> Lunch </p>
+                <div class="tab">
+                    
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle" id="Title2"></p>
+                        <p class = "Details">A resturant in central at Garden City on Garden City road and Alderbridge way. Good portions reccomended for groups of people. Not always busy. </p>
+                        <a href="" id = "Link2"></a>
+                        
+                    </div>
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle" id="Title3"></p>
+                        <p class = "Details"> A small resturant in Empire Center on No3 road, busy at rush hours. Reservation is reccomended.</p>
+                        <a href="" id = "Link3"></a>
+                        
+                    </div>
+                </div>
+                
+                <p class = "BreakfastDimsum"> Dinner </p>
+                <div class="tab">
+                    
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle" id="Title4"></p>
+                        <a href="" id = "Link4"></a>
+                        
+                    </div>
+                    <div class = "Individual_Dish">
+                        <p class = "FoodTitle" id="Title5"></p>
+                        <a href="" id = "Link5"></a>
+                        
+                    </div>
+                </div>
+                
+                
+
+
+            
+
+                <script>
+                    fetch("Resturant.json")    
+                        .then(response => response.json())
+                        .then(data =>{
+                            console.log(data)
+                            var title = "#Title"
+                            var link = "#Link"
+                            for (x in data){
+                                title = "#Title" + x
+                                link = "Link" + x
+                                document.querySelector(title).innerText = data[x].Dishname
+                                var ref = document.getElementById(link)
+                                ref.setAttribute("href", data[x].Link)
+                                ref.innerText = "Link to Resturant"
+
+
+                            }
+
+                        })
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
+ 
